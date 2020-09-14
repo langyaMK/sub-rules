@@ -4,6 +4,7 @@ port: 7892
 allow-lan: false
 mode: rule
 log-level: info
+ipv6: true
 external-controller: '127.0.0.1:9090'
 dns:
   enable: true # 是否启用dns false
