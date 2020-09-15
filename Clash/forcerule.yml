@@ -4,7 +4,7 @@ port: 7892
 allow-lan: false
 mode: rule
 log-level: info
-# ipv6: true
+ipv6: true
 external-controller: '127.0.0.1:9090'
 dns:
   enable: true # 是否启用dns false
@@ -27,10 +27,10 @@ dns:
   fallback:
     - 8.8.8.8 # 谷歌DNS
     - 1.1.1.1 # Cloudflare DNS
-    - tls://dns.rubyfish.cn:853
+    #- tls://dns.rubyfish.cn:853
     - tls://1.0.0.1:853
     - tls://dns.google:853
-    - https://dns.rubyfish.cn/dns-query
+    #- https://dns.rubyfish.cn/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
     - https://doh.rixcloud.dev/dns-query
