@@ -2,10 +2,14 @@ mixed-port: 7890
 socks-port: 7891
 port: 7892
 allow-lan: false
+bind-address: "*"
+ipv6: true
 mode: rule
 log-level: info
-ipv6: true
 external-controller: '127.0.0.1:9090'
+hosts:
+   '*.clash.dev': 127.0.0.1
+   'alpha.clash.dev': '::1'
 dns:
   enable: true # 是否启用dns false
   ipv6: true
