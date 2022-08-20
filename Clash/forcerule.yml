@@ -5,9 +5,6 @@ ipv6: true
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
-# experimental:
-#   ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
-#    interface-name: en0 # outbound interface name
 hosts:
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
@@ -19,9 +16,6 @@ dns:
     - 223.5.5.5
     - 1.0.0.1
     - 119.29.29.29
-    #- 8.8.8.8
-    #- 1.2.4.8
-    #- 1.1.1.1
   enhanced-mode: fake-ip # 模式：redir-host或fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
